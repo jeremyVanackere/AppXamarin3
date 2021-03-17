@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppXamarin3.Views.EnregistrerUtilisateur">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Prénom : "></Label>
+                <Entry x:Name="prenom" Placeholder="Saisir votre prénom..."></Entry>
+            </StackLayout>
+            <StackLayout>
+                <Button Text="Enregister user" Clicked="EnregisterUser" ></Button>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

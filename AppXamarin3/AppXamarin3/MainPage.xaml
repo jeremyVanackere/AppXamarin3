@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppXamarin3.MainPage">
+
+    <StackLayout>
+        <StackLayout>
+            <Label x:Name="welcomeMessage"  Text="Welcome"></Label>
+            <Button Text="Ajouter un user" x:Name="setUser" Clicked="OpenEnregistrerUser"></Button>
+            <Button Text="Calculatrice" Clicked="OpenCalculatrice"></Button>
+        </StackLayout>
+        <StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Entree value" HorizontalTextAlignment="Start"/>
+                <Entry x:Name="valueSearch" Placeholder="entrée valeur de 1 à 100" HorizontalOptions="StartAndExpand"/>
+            </StackLayout>
+            <StackLayout>
+                <Button x:Name="btnVerifier" Text="verifier" Clicked="VerifierValue"></Button>
+                <Label x:Name="result" Text="no results"></Label>
+            </StackLayout>
+        </StackLayout>
+    </StackLayout>
+   
+
+</ContentPage>

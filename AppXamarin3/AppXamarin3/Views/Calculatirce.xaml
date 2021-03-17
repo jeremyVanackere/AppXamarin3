@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppXamarin3.Views.Calculatirce"
+             Title="Calculatrice">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid x:Name="grille" Margin="20,10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="75" />
+                    <RowDefinition Height="50" />
+                    <RowDefinition Height="50" />
+                    <RowDefinition Height="50" />
+                    <RowDefinition Height="50" />
+                    <RowDefinition Height="50" />
+                </Grid.RowDefinitions>
+
+                <Label x:Name="historique" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" VerticalTextAlignment="End" />
+                <Label x:Name="val" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="4" VerticalTextAlignment="End" />
+                
+                <Button Clicked="TouchNumber" Grid.Row="2" Grid.Column="0" Text="1" VerticalOptions="Center" />
+                <Button Clicked="TouchNumber" Grid.Row="2" Grid.Column="1" Text="2" VerticalOptions="Center" />
+                <Button Clicked="TouchNumber" Grid.Row="2" Grid.Column="2" Text="3" VerticalOptions="Center" />
+                <Button Clicked="TouchOperation" Grid.Row="2" Grid.Column="3" Text="/" VerticalOptions="Center" />
+
+                <Button Clicked="TouchNumber" Grid.Row="3" Grid.Column="0" Text="4" VerticalOptions="Center" />
+                <Button Clicked="TouchNumber" Grid.Row="3" Grid.Column="1" Text="5" VerticalOptions="Center" />
+                <Button Clicked="TouchNumber" Grid.Row="3" Grid.Column="2" Text="6" VerticalOptions="Center" />
+                <Button Clicked="TouchOperation" Grid.Row="3" Grid.Column="3" Text="x" VerticalOptions="Center" />
+
+                <Button Clicked="TouchNumber" Grid.Row="4" Grid.Column="0" Text="7" VerticalOptions="Center" />
+                <Button Clicked="TouchNumber" Grid.Row="4" Grid.Column="1" Text="8" VerticalOptions="Center" />
+                <Button Clicked="TouchNumber" Grid.Row="4" Grid.Column="2" Text="9" VerticalOptions="Center" />
+                <Button Clicked="TouchOperation" Grid.Row="4" Grid.Column="3" Text="-" VerticalOptions="Center" />
+
+                <Button Clicked="TouchNumber" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="3" Text="0" VerticalOptions="Center" />
+                <Button Clicked="TouchOperation" Grid.Row="5" Grid.Column="3" Text="+" VerticalOptions="Center" />
+
+                <Button Clicked="removeOperation" Grid.Row="6" Grid.Column="0" Text="C" VerticalOptions="Center" />
+                <Button Clicked="removeAll" Grid.Row="6" Grid.Column="1" Text="CE" VerticalOptions="Center" />
+                <Button Clicked="Calculate" Grid.Row="6" Grid.Column="2" Grid.ColumnSpan="2" Text="=" VerticalOptions="Center" />
+            </Grid>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
